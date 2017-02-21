@@ -1,0 +1,20 @@
+all: Proj3Aux.o Exceptions.o BinarySearchTree.o AugmentedBinarySearchTree.o Proj3.o
+	g++ -Wall Proj3Aux.o Exceptions.o BinarySearchTree.o AugmentedBinarySearchTree.o Proj3.o -o Proj3.out
+
+Proj3Aux.o: Proj3Aux.cpp
+	g++ -Wall -c Proj3Aux.cpp
+Exceptions.o: Exceptions.cpp
+	g++ -Wall -c Exceptions.cpp
+BinarySearchTree.o: BinarySearchTree.cpp
+	g++ -Wall -c BinarySearchTree.cpp
+AugmentedBinarySearchTree.o: AugmentedBinarySearchTree.cpp
+	g++ -Wall -c AugmentedBinarySearchTree.cpp
+Proj3.o: Proj3.cpp
+	g++ -Wall -c Proj3.cpp
+run: 
+	./Proj3.out $(input) $(commands)
+clean:
+	rm -rf *.o
+	rm -f Proj3.out
+	rm -f *~ *.h.gch *#
+

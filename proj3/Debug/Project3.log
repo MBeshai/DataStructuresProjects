@@ -1,0 +1,107 @@
+﻿Build started 10/28/2015 9:30:26 AM.
+     1>Project "C:\Users\m\Documents\Visual Studio 2015\Projects\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib AugmentedBinarySearchTree.cpp BinarySearchTree.cpp Proj3.cpp Proj3Aux.cpp
+         AugmentedBinarySearchTree.cpp
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\Proj3Aux.h(29): error C2079: 'Proj3Aux::m_tree' uses undefined class 'AugmentedBinarySearchTree<int>'
+         BinarySearchTree.cpp
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\Proj3Aux.h(29): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\Proj3Aux.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\Proj3Aux.h(29): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\AugmentedBinarySearchTree.h(56): error C2059: syntax error: '<'
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\AugmentedBinarySearchTree.h(58): note: see reference to class template instantiation 'BinaryNode<Comparable>' being compiled
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\AugmentedBinarySearchTree.h(56): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.h(16): error C2989: 'BinarySearchTree': class template has already been declared as a non-class template
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\AugmentedBinarySearchTree.h(56): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.h(15): error C3857: 'BinarySearchTree': multiple template parameter lists are not allowed
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.h(81): error C2989: 'BinarySearchTree': class template has already been declared as a non-class template
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.h(16): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.h(56): error C3857: 'BinarySearchTree': multiple template parameter lists are not allowed
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(19): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(19): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(33): error C2448: 'root': function-style initializer appears to be a function definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(41): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(41): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(41): error C2588: '::~BinarySearchTree': illegal global destructor
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(51): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(51): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): error C2182: 'BinarySearchTree': illegal use of type 'void'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(69): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(69): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(78): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(78): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(78): error C2040: 'BinarySearchTree': 'const Comparable &' differs in levels of indirection from 'int'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(78): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(89): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(89): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(98): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(98): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(98): error C2371: 'BinarySearchTree': redefinition; different basic types
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(98): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(108): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(108): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(119): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(119): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(119): error C2373: 'BinarySearchTree': redefinition; different type modifiers
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(119): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(138): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(138): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(139): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(139): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(154): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(154): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(154): error C2182: 'BinarySearchTree': illegal use of type 'void'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(154): error C2374: 'BinarySearchTree': redefinition; multiple initialization
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(154): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(155): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(155): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(175): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(175): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(176): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(176): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2040: 'BinarySearchTree': 'BinaryNode<Comparable> *' differs in levels of indirection from 'int'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(205): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(222): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(222): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(224): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(224): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(225): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(225): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(257): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(257): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(257): error C2182: 'BinarySearchTree': illegal use of type 'void'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(257): error C2374: 'BinarySearchTree': redefinition; multiple initialization
+         c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(59): note: see declaration of 'BinarySearchTree'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(257): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(258): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(258): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(273): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(273): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(274): error C2143: syntax error: missing ';' before '{'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(274): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2988: unrecognizable template declaration/definition
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2143: syntax error: missing ';' before '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2040: 'BinarySearchTree': 'BinaryNode<Comparable> *' differs in levels of indirection from 'int'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2059: syntax error: '<'
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2065: 'Comparable': undeclared identifier
+     1>c:\users\m\documents\visual studio 2015\projects\project3\project3\BinarySearchTree.cpp(288): error C2923: 'BinaryNode': 'Comparable' is not a valid template type argument for parameter 'Comparable'
+         Proj3.cpp
+         Proj3Aux.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\m\Documents\Visual Studio 2015\Projects\Project3\Project3\Project3.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.18
