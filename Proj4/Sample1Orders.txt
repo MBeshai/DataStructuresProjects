@@ -1,0 +1,3 @@
+"Joe Smith" yes min meat vegetable vegetable fruit sweet
+"Jane Doe" yes max meat fruit starch sweet fruit sweet
+"Jill Jones" yes min vegetable starch sweet fruit starch

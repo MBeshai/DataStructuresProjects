@@ -1,0 +1,85 @@
+TEST_DIR = /afs/umbc.edu/users/c/m/cmarron/pub/gtest-1.7.0
+USER_DIR = .
+
+CPPFLAGS += -isystem $(GTEST_DIR)/include
+
+CXXFLAGS += -g -Wall -Wextra -pthread
+
+TESTS = project4_test
+
+GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
+	      $(GTEST_DIR)/include/gtest/internal/*.h
+
+all: $(TESTS)
+
+clean:
+	rm -f $(TESTS) gtest.a gtest_main.a *.o
+
+GTEST_SRCS_ = $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
+
+gtest-all.o : $(GTEST_SRCS_)
+	    $(CXX) $(CPPFLAGS) -I$(GTEST_DIR) $(CXXFLAGS) -c \
+	    $(GTEST_DIR)/src/gtest-all.cc
+
+gtest_main.o : $(GTEST_SRCS_)
+	     $(CXX) $(CPPFLAGS) -I$(GTEST_DIR) $(CXXFLAGS) -c \
+	     $(GTEST_DIR)/src/gtest_main.cc
+
+gtest.a : gtest-all.o
+	$(AR) $(ARFLAGS) $@ $^
+
+gtest_main.a : gtest-all.o gtest_main.o
+	     $(AR) $(ARFLAGS) $@ $^
+
+project4_test.o: $(USER_DIR)/project4_test.cpp $(USER_DIR)/Driver.h \
+		 $(USER_DIR)/Driver.cpp $(GTEST_HEADERS)
+		 $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/project4_test.cpp
+
+
+Driver.o: Driver.cpp 
+	  $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Driver.cpp
+
+Manager.o: Manager.h Manager.cpp Food.h
+	   $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Manager.cpp
+
+Orders.o: Orders.h Orders.cpp
+	  $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Orders.cpp
+
+Order.o: Order.h Order.cpp
+	 $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Order.cpp
+
+Store.o: Store.h Store.cpp
+	 $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Store.cpp
+
+Food.o: Food.h Food.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Food.cpp
+
+Fruit.o: Fruit.h Fruit.cpp
+	 $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Fruit.cpp
+
+Meat.o: Meat.h Meat.cpp
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Meat.cpp
+
+Starch.o: Starch.h Starch.cpp
+	  $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Starch.cpp
+
+Sweet.o: Sweet.h Sweet.cpp
+	 $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Sweet.cpp
+
+Vegetable.o: Vegetable.h Vegetable.cpp
+	     $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c Vegetable.cpp
+
+
+IntervalHeap.o: IntervalHeap.h IntervalHeap.cpp
+		$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c IntervalHeap.cpp
+
+
+
+Driver.o: $(USER_DIR)/Driver.cpp $(USER_DIR)/Driver.h
+	  $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/Driver.cpp
+
+
+
+
+project4_test: gtest_main.a project4_test.o Driver.o Manager.o Orders.o Order.o Store.o Food.o Fruit.o Meat.o Starch.o Sweet.o Vegetable.o IntervalHeap.o
+	       $(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@
