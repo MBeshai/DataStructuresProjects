@@ -1,0 +1,31 @@
+#include "Node341.h"
+
+template <class T>
+Node341341<T>::Node341(const T& data)
+{
+	m_data = data;
+	m_next = NULL;
+}template<class T>
+Node341<T>::Node341(const T & data)
+{
+}
+template <class T>
+const T& Node341<T>::GetData()
+{
+	return m_data;
+}
+template <class T>
+void Node341<T>::SetData(const T& data)
+{
+	m_data = data;
+}
+template <class T>
+Node341<T>* Node341<T>::GetNext()
+{
+	return m_next;
+}
+template <class T>
+void Node341<T>::SetNext(Node341<T>* next)
+{
+	m_next = next;
+}

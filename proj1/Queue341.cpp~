@@ -1,0 +1,57 @@
+#ifndef QUEUE341_CPP
+#define QUEUE341_CPP
+
+#include "Queue341.h"
+#include "Node341.h"
+#include <iostream>
+using namespace std;
+
+template <class T> Queue341<T>::Queue341() {
+	m_size = 0;
+}
+template <class T> int Queue341<T>::Size() const {
+  
+ 
+	return m_size;
+}
+
+template <class T> bool Queue341<T>::Empty() const
+{
+	if (0==m_size) {
+		return true;
+	}
+	return false;
+}
+template <class T> bool Queue341<T>::Push(T obj) {
+	
+	Node341<T>* newNode=new Node341<T>();
+		newNode->SetData(obj);
+	//if (m_size == 0) {
+	//	m_front->SetData(obj);
+	//	}
+	//	if (m_size == 1) {
+	//	m_top->SetNext(newNode);
+	//}
+	//m_next->SetNext(newNode);
+	m_size++;
+	return true;
+}
+template <class T> bool Queue341<T>::Pop() {
+	return true;
+}
+template <class T> bool Queue341<T>::Clear() {
+	return true;
+}
+ 
+template <class T> Node341<T>* Queue341<T>::getNext(){
+  return m_top;
+
+}
+template <class T> Node341<T>* Queue341<T>::getPrevious(){
+  return m_top;
+
+}
+
+template class List341<int>;
+template class Queue341<int>;
+#endif

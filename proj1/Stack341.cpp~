@@ -1,0 +1,26 @@
+#include "Stack341.h"
+
+template <class T> Stack341<T>::Stack341() {
+
+}
+template <class T> Stack341<T>::Stack341(const T& data)
+{
+
+}
+template <class T> int Stack341<T>::Size() const {
+	return 0;
+}
+
+template <class T> bool Stack341<T>::Empty() const
+{
+	return true;
+}
+template <class T> bool Stack341<T>::Push(T obj) {
+	return true;
+}
+template <class T> bool Stack341<T>::Pop() {
+	return true;
+}
+template <class T> bool Stack341<T>::Clear() {
+	return true;
+}

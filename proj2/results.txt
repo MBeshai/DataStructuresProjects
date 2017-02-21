@@ -1,0 +1,55 @@
+Mina Beshai, Section 7
+---------- Store ----------
+Sweets 2 Sugar Cookie 
+Starch 5 Granola French Bread Potato Salad 
+Meat 1 Beef Chuck 
+Vegetable 3 Butternut Squash Spinach 
+Fruit 4 Banana Apples 
+---------- Orders -----------
+Joe Smith
+Requests: Meat Vegetable Vegetable Fruit Sweet 
+ ----- 
+Jane Doe
+Requests: Meat Fruit Starch Sweet Fruit Sweet 
+ ----- 
+Jill Jones
+Requests: Vegetable Starch Sweet Fruit Starch 
+ ----- 
+----------Orders-----------
+Joe Smith
+items: 
+Beef Chuck 4.99
+Granola 2.99
+Granola 2.99
+Granola 2.99
+Sugar Cookie 1.5
+***Total: 15.46
+-----
+Jane Doe
+items: 
+Beef Chuck 4.99
+Granola 2.99
+Granola 2.99
+Sugar Cookie 1.5
+Granola 2.99
+Sugar Cookie 1.5
+***Total: 16.96
+-----
+Jane Doe Unable to complete order
+------
+Jill Jones
+items: 
+Granola 2.99
+Granola 2.99
+Sugar Cookie 1.5
+Granola 2.99
+Granola 2.99
+***Total: 13.46
+-----
+---------- Store ----------
+Sweets 2 Sugar Cookie 
+Starch 4 Granola Potato Salad 
+Meat 1 Beef Chuck 
+Vegetable 3 Granola Spinach 
+Fruit 4 Granola Apples 
+---------- Orders -----------
